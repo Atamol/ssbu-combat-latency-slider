@@ -48,3 +48,7 @@ featureを直接指定した場合 (例: `cargo skyline build --release --featur
 ## ライセンス
 
 [LICENSE](LICENSE)
+
+## 謝辞
+
+- Naxdy ([latency-slider-de](https://github.com/Naxdy/latency-slider-de))
