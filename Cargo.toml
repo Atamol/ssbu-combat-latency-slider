@@ -3,6 +3,7 @@ name = "ssbu-combat-latency-slider"
 version = "1.0.0"
 authors = ["Atamol"]
 edition = "2021"
+license = "AGPL-3.0-only"
 
 [package.metadata.skyline]
 titleid = "01006A800016E000"
