@@ -8,6 +8,7 @@ const BOLD: &str = "\x1b[1m";
 const DIM: &str = "\x1b[2m";
 const CYAN: &str = "\x1b[36m";
 const YELLOW: &str = "\x1b[33m";
+#[cfg(not(feature = "fixed"))]
 const MAGENTA: &str = "\x1b[35m";
 
 static START: OnceLock<Instant> = OnceLock::new();
