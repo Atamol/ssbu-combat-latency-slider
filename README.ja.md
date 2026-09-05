@@ -2,7 +2,7 @@
 
 # ssbu-combat-latency-slider
 
-[latency-slider-de](https://github.com/Naxdy/latency-slider-de)の調整版 (v13.0.5対応)．画面上に一切のUIが表示されません．
+[latency-slider-de](https://github.com/Naxdy/latency-slider-de)の調整版 (v13.0.5対応)．十字キー4方向で0-3Fの値を指定でき，画面上に一切のUIが表示されません．
 
 ## 操作
 
