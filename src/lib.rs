@@ -126,7 +126,7 @@ unsafe fn set_online_latency_hook(ctx: &InlineCtx) {
     }
 }
 
-#[skyline::main(name = "ssbu-better-latency-slider")]
+#[skyline::main(name = "ssbu-combat-latency-slider")]
 pub fn main() {
     #[cfg(feature = "fixed")]
     log::startup(CURRENT_LATENCY);

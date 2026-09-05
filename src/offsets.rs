@@ -8,7 +8,7 @@ macro_rules! ensure_hooks {
             if $f.get_offset_in_memory().is_none() && is_successful {
                 skyline::error::show_error(
                     420,
-                    "ssbu-better-latency-slider failed to load.\0",
+                    "ssbu-combat-latency-slider failed to load.\0",
                     format!("Error: Failed to find {} in memory.\n\n{}\n\n{}\0",
                     $f.location_name,
                     "This may be the result of an incompatible mod being loaded, or SSBU being updated.",
@@ -55,7 +55,7 @@ impl SSBUMemoryLocation<'_> {
 
             if let Some(r) = r {
                 println!(
-                    "[ssbu-better-latency-slider] Found {} at {r:#09x?}",
+                    "[ssbu-combat-latency-slider] Found {} at {r:#09x?}",
                     self.location_name
                 );
             }

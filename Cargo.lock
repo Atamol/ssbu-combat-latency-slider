@@ -83,7 +83,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "ssbu-better-latency-slider"
+name = "ssbu-combat-latency-slider"
 version = "1.0.0"
 dependencies = [
  "ninput",

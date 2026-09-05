@@ -5,7 +5,7 @@
 $ErrorActionPreference = "Stop"
 Set-Location -LiteralPath $PSScriptRoot
 
-$src = "target/aarch64-skyline-switch/release/libssbu_better_latency_slider.nro"
+$src = "target/aarch64-skyline-switch/release/libssbu_combat_latency_slider.nro"
 $out = "dist"
 New-Item -ItemType Directory -Force -Path $out | Out-Null
 
@@ -16,8 +16,8 @@ function Build([string]$feature, [string]$suffix) {
         cargo skyline build --release
     }
     if ($LASTEXITCODE -ne 0) { throw "build failed (feature: $feature)" }
-    Copy-Item -LiteralPath $src -Destination "$out/libssbu_better_latency_slider$suffix.nro" -Force
-    Write-Host "  -> $out/libssbu_better_latency_slider$suffix.nro"
+    Copy-Item -LiteralPath $src -Destination "$out/libssbu_combat_latency_slider$suffix.nro" -Force
+    Write-Host "  -> $out/libssbu_combat_latency_slider$suffix.nro"
 }
 
 if ($args.Count -gt 0) {

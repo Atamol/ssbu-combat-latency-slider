@@ -1,54 +1,57 @@
-### [[English Here]](README.en.md)
+### ![ja](https://flagcdn.com/20x15/jp.png) [日本語版はこちら](README.ja.md)
 
-# ssbu-better-latency-slider
+# ssbu-combat-latency-slider
 
-[latency-slider-de](https://github.com/Naxdy/latency-slider-de)の調整版．
+> [!NOTE]
+> This mod is unnecessary if you have latency-slider-de. It is just a version tuned to be easier to use for shy Japanese players.
 
-## 操作
+> [!IMPORTANT]
+> Renamed from `ssbu-better-latency-slider`. Delete the old `libssbu_better_latency_slider.nro` before installing this one, or both load and hook the same address. The config moved to a new folder, so `default_latency` goes back to 2F.
 
-VIPのキャラ選択画面または専用部屋の待機画面で，十字キーを押して遅延を変更します．  
-このとき，画面上に現在の遅延などは表示されません．
+An adjusted version of [latency-slider-de](https://github.com/Naxdy/latency-slider-de).
 
-| 入力 | レイテンシ |
+## Controls
+
+On the Elite Smash character select screen or the arena waiting room, press the d-pad to change the delay. The current delay is not shown on screen.
+
+| Input | Latency |
 | --- | --- |
-| 左 | 0F |
-| 上 | 1F |
-| 右 | 2F |
-| 下 | 3F |
+| Left | 0F |
+| Up | 1F |
+| Right | 2F |
+| Down | 3F |
 
-## 設定
+## Config
 
-初回起動時に`sd:/config/ssbu-better-latency-slider/config.txt`が生成されます．
+`sd:/config/ssbu-combat-latency-slider/config.txt` is generated on first launch.
 
 ```
 default_latency=2
 ```
 
-`default_latency`はゲーム起動時に適用される初期値 (0-3) で，この値を書き換えることで初期値を変更できます．  
-デフォルトで2Fになっています．
+`default_latency` is the value applied at startup (0-3). Edit it to change the default. It is 2F by default.
 
-## ビルド
+## Build
 
 ```shell
 cargo skyline build --release
 ```
 
-### 初期値固定版
+### Locked builds
 
-十字キーを無効化し，レイテンシを特定の値に固定することができます (実際にビルドしたものがそれぞれリリースにあります)．  
-`0f`，`1f`，`2f`，`3f`のいずれかでfeatureを指定するか，`build.ps1`を使うと，初期値固定版を`_2f`のような接尾辞付きの名前で出力します．
+You can disable the d-pad and lock the latency to a fixed value. Prebuilt ones are on the releases page. Pass one of the `0f`, `1f`, `2f`, `3f` features, or use `build.ps1`, to output the locked build with a `_2f` style suffix.
 
 ```powershell
-.\build.ps1 2f       # dist/libssbu_better_latency_slider_2f.nro
-.\build.ps1          # 通常版+固定版4種すべて
+.\build.ps1 2f       # dist/libssbu_combat_latency_slider_2f.nro
+.\build.ps1          # dpad version plus all four locked builds
 ```
 
-featureを直接指定した場合 (例: `cargo skyline build --release --features 2f`) は，cargo-skylineに出力名を変えるオプションがないため通常と同じ`libssbu_better_latency_slider.nro`が出力されます．
+Passing the feature directly (e.g. `cargo skyline build --release --features 2f`) outputs the usual `libssbu_combat_latency_slider.nro`, since cargo-skyline has no option to change the output name.
 
-## ライセンス
+## License
 
 [LICENSE](LICENSE)
 
-## 謝辞
+## Credit
 
 - Naxdy ([latency-slider-de](https://github.com/Naxdy/latency-slider-de))

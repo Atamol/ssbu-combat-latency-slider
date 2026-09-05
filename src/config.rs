@@ -1,11 +1,11 @@
-const CONFIG_DIR: &str = "sd:/config/ssbu-better-latency-slider";
-const CONFIG_PATH: &str = "sd:/config/ssbu-better-latency-slider/config.txt";
+const CONFIG_DIR: &str = "sd:/config/ssbu-combat-latency-slider";
+const CONFIG_PATH: &str = "sd:/config/ssbu-combat-latency-slider/config.txt";
 
 pub const DEFAULT_LATENCY: u8 = 2;
 const MAX_LATENCY: u8 = 3;
 
 const DEFAULT_CONFIG: &str = "\
-# ssbu-better-latency-slider config
+# ssbu-combat-latency-slider config
 #
 # 起動時に適用されるレイテンシの初期値 (0-3)
 # ゲーム中は十字キーで上書き可能 (左0 / 上1 / 右2 / 下3)
