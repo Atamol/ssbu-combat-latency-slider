@@ -14,8 +14,8 @@ use offsets::{LOC_UPDATE_CSS, LOC_UPDATE_ROOM};
 #[cfg(not(feature = "fixed"))]
 use std::sync::atomic::{AtomicBool, AtomicUsize, Ordering};
 
-/// Lets the d-pad change the latency during a match. Off because nobody uses it and it costs a pad
-/// read every frame
+/// Writes the latency mid match, which needs a poll thread because the css and room hooks stop
+/// running there. Off since setting it at the character select is enough
 #[cfg(not(feature = "fixed"))]
 const MID_MATCH_INPUT: bool = false;
 

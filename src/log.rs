@@ -1,4 +1,4 @@
-// The mod draws nothing on screen, so `cargo skyline listen` is the only way to see what ran
+//! The mod draws nothing on screen, so `cargo skyline listen` is the only way to see what ran
 use std::sync::atomic::{AtomicI16, AtomicU32, Ordering};
 use std::sync::OnceLock;
 use std::time::Instant;
@@ -47,7 +47,7 @@ pub fn applied(game_wanted: u8, latency: u8) {
     let n = CALLS.fetch_add(1, Ordering::Relaxed) + 1;
     let signature = ((game_wanted as i16) << 4) | latency as i16;
     let changed = LAST_LOGGED.swap(signature, Ordering::SeqCst) != signature;
-    // Powers of ten, so a per frame call shows itself without flooding the log
+    // Lets a per frame call show itself without flooding the log
     let milestone = matches!(n, 1 | 10 | 100 | 1000 | 10000);
     if !changed && !milestone {
         return;
