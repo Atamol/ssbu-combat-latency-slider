@@ -1,7 +1,7 @@
 [package]
 name = "ssbu-better-latency-slider"
 version = "1.0.0"
-authors = []
+authors = ["Atamol"]
 edition = "2021"
 
 [package.metadata.skyline]
