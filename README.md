@@ -51,4 +51,4 @@ Passing the feature directly (e.g. `cargo skyline build --release --features 2f`
 ## Credit
 
 - Naxdy ([latency-slider-de](https://github.com/Naxdy/latency-slider-de))
-- [HewDraw-Remix](https://github.com/HDR-Development/HewDraw-Remix) team
+- [HewDraw-Remix](https://github.com/HDR-Development) team

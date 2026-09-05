@@ -52,4 +52,4 @@ featureを直接指定した場合 (例: `cargo skyline build --release --featur
 ## 謝辞
 
 - Naxdy ([latency-slider-de](https://github.com/Naxdy/latency-slider-de))
-- [HewDraw-Remix](https://github.com/HDR-Development/HewDraw-Remix) チーム
+- [HewDraw-Remix](https://github.com/HDR-Development) チーム
