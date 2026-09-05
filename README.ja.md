@@ -2,22 +2,19 @@
 
 # ssbu-combat-latency-slider
 
-[latency-slider-de](https://github.com/Naxdy/latency-slider-de)の調整版．
-
-> [!IMPORTANT]
-> `ssbu-better-latency-slider`から改名しました．導入前に古い`libssbu_better_latency_slider.nro`を削除してください．残っていると両方が読み込まれ，同じアドレスにフックが二重に掛かります．configの場所も変わるため，`default_latency`は2Fに戻ります．
+[latency-slider-de](https://github.com/Naxdy/latency-slider-de)の調整版 (v13.0.5対応)．画面上に一切のUIが表示されません．
 
 ## 操作
 
-VIPのキャラ選択画面または専用部屋の待機画面で，十字キーを押して遅延を変更します．  
+VIPのキャラ選択画面または専用部屋の待機画面で，十字キーを押して遅延を変更します．
 このとき，画面上に現在の遅延などは表示されません．
 
 | 入力 | レイテンシ |
-| --- | --- |
-| 左 | 0F |
-| 上 | 1F |
-| 右 | 2F |
-| 下 | 3F |
+| ---- | ---------- |
+| 左   | 0F         |
+| 上   | 1F         |
+| 右   | 2F         |
+| 下   | 3F         |
 
 ## 設定
 
@@ -27,7 +24,7 @@ VIPのキャラ選択画面または専用部屋の待機画面で，十字キ�
 default_latency=2
 ```
 
-`default_latency`はゲーム起動時に適用される初期値 (0-3) で，この値を書き換えることで初期値を変更できます．  
+`default_latency`はゲーム起動時に適用される初期値 (0-3) で，この値を書き換えることで初期値を変更できます．
 デフォルトで2Fになっています．
 
 ## ビルド
@@ -38,7 +35,7 @@ cargo skyline build --release
 
 ### 初期値固定版
 
-十字キーを無効化し，レイテンシを特定の値に固定することができます (実際にビルドしたものがそれぞれリリースにあります)．  
+十字キーを無効化し，レイテンシを特定の値に固定することができます (実際にビルドしたものがそれぞれリリースにあります)．
 `0f`，`1f`，`2f`，`3f`のいずれかでfeatureを指定するか，`build.ps1`を使うと，初期値固定版を`_2f`のような接尾辞付きの名前で出力します．
 
 ```powershell
@@ -50,8 +47,9 @@ featureを直接指定した場合 (例: `cargo skyline build --release --featur
 
 ## ライセンス
 
-[LICENSE](LICENSE)
+[LICENSE](LICENSE) (AGPL-3.0)
 
 ## 謝辞
 
 - Naxdy ([latency-slider-de](https://github.com/Naxdy/latency-slider-de))
+- [HewDraw-Remix](https://github.com/HDR-Development/HewDraw-Remix) チーム

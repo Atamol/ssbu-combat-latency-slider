@@ -2,24 +2,20 @@
 
 # ssbu-combat-latency-slider
 
-> [!NOTE]
-> This mod is unnecessary if you have latency-slider-de. It is just a version tuned to be easier to use for shy Japanese players.
+An adjusted version of [latency-slider-de](https://github.com/Naxdy/latency-slider-de) (13.0.5 compatible).
 
-> [!IMPORTANT]
-> Renamed from `ssbu-better-latency-slider`. Delete the old `libssbu_better_latency_slider.nro` before installing this one, or both load and hook the same address. The config moved to a new folder, so `default_latency` goes back to 2F.
-
-An adjusted version of [latency-slider-de](https://github.com/Naxdy/latency-slider-de).
+Compared to the original: no on-screen display at all, 0-3F instead of 0 to 25F, and builds with the d-pad locked to a single value.
 
 ## Controls
 
 On the Elite Smash character select screen or the arena waiting room, press the d-pad to change the delay. The current delay is not shown on screen.
 
 | Input | Latency |
-| --- | --- |
-| Left | 0F |
-| Up | 1F |
-| Right | 2F |
-| Down | 3F |
+| ----- | ------- |
+| Left  | 0F      |
+| Up    | 1F      |
+| Right | 2F      |
+| Down  | 3F      |
 
 ## Config
 
@@ -50,8 +46,9 @@ Passing the feature directly (e.g. `cargo skyline build --release --features 2f`
 
 ## License
 
-[LICENSE](LICENSE)
+[LICENSE](LICENSE) (AGPL-3.0)
 
 ## Credit
 
 - Naxdy ([latency-slider-de](https://github.com/Naxdy/latency-slider-de))
+- [HewDraw-Remix](https://github.com/HDR-Development/HewDraw-Remix) team
